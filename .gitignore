@@ -5,6 +5,3 @@ deploy_versions/
 node_modules/
 .DS_Store
 .swc
-## Panda
-styled-system
-styled-system-studio

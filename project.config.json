@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "cps",
-  "description": "cp=效率高+效能产出好",
+  "projectname": "taro",
+  "description": "",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
