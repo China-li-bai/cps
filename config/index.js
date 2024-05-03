@@ -1,6 +1,6 @@
 import Components from 'unplugin-vue-components/webpack';
 import NutUIResolver from '@nutui/auto-import-resolver';
-
+const path = require('path');
 const config = {
   projectName: 'cps',
   date: '2024-4-26',
@@ -15,6 +15,10 @@ const config = {
     750: 1,
     828: 1.81 / 2,
     375: 2 / 1
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
+    'components': path.resolve(__dirname, '..', 'src/components'),
   },
   sourceRoot: 'src',
   outputRoot: 'dist',

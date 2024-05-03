@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "removeComments": false,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
-    "sourceMap": true,
     "baseUrl": ".",
-    "rootDir": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
-    "allowJs": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny":false,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./src/*"],
+      "components/*": ["src/components/*"],
+    },
+    "types": ["node"]
   },
   "include": ["./src", "./types", "components.d.ts"],
-  "compileOnSave": false
+  "compileOnSave": false,
+  "exclude": ["node_modules", "dist"]
 }

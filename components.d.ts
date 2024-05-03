@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    InputTools: typeof import('./src/components/input-tools/index.vue')['default']
     NutButton: typeof import('@nutui/nutui-taro')['Button']
     NutInput: typeof import('@nutui/nutui-taro')['Input']
     NutPopup: typeof import('@nutui/nutui-taro')['Popup']
