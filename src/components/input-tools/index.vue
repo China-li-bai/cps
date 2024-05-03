@@ -1,15 +1,15 @@
 <template>
-  <nut-input v-model="val" placeholder="Slot" clearable>
-    <template #left>
-      <Ask></Ask>
-    </template>
+  <nut-input v-model="val" placeholder="添加记事..." clearable>
     <template #right>
-      <nut-button type="primary" size="small">Button</nut-button>
+      <Check @click="console.log('Check')" style="margin-right: 1rex" />
+      <Photograph />
     </template>
   </nut-input>
 </template>
 <script setup>
-import { ref } from 'vue'
-import { Ask } from '@nutui/icons-vue-taro'
-const val = ref('')
+import { ref } from "vue";
+import { Checkbox, CheckboxGroup } from "@nutui/nutui-taro";
+import { Photograph, Check } from "@nutui/icons-vue-taro";
+const val = ref("");
+const run = ref(false);
 </script>
